@@ -4,7 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { User, Session } from "@supabase/supabase-js";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { LogOut, Plus, TrendingUp, Package, Clock } from "lucide-react";
+import { LogOut, Plus, TrendingUp, Package, Clock, MapPin } from "lucide-react";
 import { toast } from "sonner";
 
 const Dashboard = () => {
@@ -86,6 +86,10 @@ const Dashboard = () => {
             HUSON Dashboard
           </h1>
           <div className="flex gap-3">
+            <Button onClick={() => navigate("/locations")} variant="outline">
+              <MapPin className="h-4 w-4 mr-2" />
+              Locations
+            </Button>
             <Button onClick={() => navigate("/donate")} className="shadow-glow">
               <Plus className="h-4 w-4 mr-2" />
               New Donation

@@ -14,6 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
+      collection_points: {
+        Row: {
+          accepted_items: string[] | null
+          address: string
+          contact_email: string | null
+          contact_phone: string | null
+          created_at: string
+          description: string | null
+          id: string
+          is_active: boolean | null
+          latitude: number
+          longitude: number
+          name: string
+          operating_hours: string | null
+          type: string
+          updated_at: string
+        }
+        Insert: {
+          accepted_items?: string[] | null
+          address: string
+          contact_email?: string | null
+          contact_phone?: string | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          is_active?: boolean | null
+          latitude: number
+          longitude: number
+          name: string
+          operating_hours?: string | null
+          type: string
+          updated_at?: string
+        }
+        Update: {
+          accepted_items?: string[] | null
+          address?: string
+          contact_email?: string | null
+          contact_phone?: string | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          is_active?: boolean | null
+          latitude?: number
+          longitude?: number
+          name?: string
+          operating_hours?: string | null
+          type?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       donations: {
         Row: {
           classification_result: Json | null

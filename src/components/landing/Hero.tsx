@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -38,8 +38,9 @@ const Hero = () => {
             </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white/20">
-            <Link to="#how-it-works">
-              Learn More
+            <Link to="/locations">
+              <MapPin className="mr-2 h-5 w-5" />
+              Find Locations
             </Link>
           </Button>
         </div>
