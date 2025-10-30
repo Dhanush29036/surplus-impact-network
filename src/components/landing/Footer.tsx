@@ -26,18 +26,18 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">About</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link to="#" className="hover:text-primary transition-smooth">Our Mission</Link></li>
-              <li><Link to="#" className="hover:text-primary transition-smooth">Impact Report</Link></li>
-              <li><Link to="#" className="hover:text-primary transition-smooth">Sustainability</Link></li>
+              <li><a href="#mission" className="hover:text-primary transition-smooth">Our Mission</a></li>
+              <li><a href="#impact" className="hover:text-primary transition-smooth">Impact Report</a></li>
+              <li><a href="#sustainability" className="hover:text-primary transition-smooth">Sustainability</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link to="#" className="hover:text-primary transition-smooth">Help Center</Link></li>
-              <li><Link to="#" className="hover:text-primary transition-smooth">Contact Us</Link></li>
-              <li><Link to="#" className="hover:text-primary transition-smooth">Privacy Policy</Link></li>
+              <li><a href="#help" className="hover:text-primary transition-smooth">Help Center</a></li>
+              <li><a href="#contact" className="hover:text-primary transition-smooth">Contact Us</a></li>
+              <li><a href="#privacy" className="hover:text-primary transition-smooth">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
