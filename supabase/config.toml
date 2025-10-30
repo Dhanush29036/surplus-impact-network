@@ -1,0 +1,4 @@
+project_id = "ezaualzegifshrpnvphq"
+
+[functions.classify-donation]
+verify_jwt = false
